@@ -1,0 +1,60 @@
+﻿
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .border_gray {
+            border: 1px solid #403b3b;
+            border-radius: 5px;
+        }
+
+        .size {
+            width: 49%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid ">
+        <div class="row">
+            <button onclick="myFunction()" style="margin-left:20%; width: 10%; height: 5%;border-radius: 5px; background-color: lawngreen;">Run</button>
+        </div>
+        <div class="row">
+
+            <textarea id="myText" class="size col-12 col-lg-6  border_gray " style="float: left; ">
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+</body>
+</html>
+</textarea>
+
+        </div>
+
+
+        <div class="size col-12 col-lg-6 border_gray" style="float: right; padding-left: 1%;">
+            <p id="demo"></p>
+
+        </div>
+    </div>
+    <script>
+      
+        document.getElementById("myText").onkeyup = myFunction();
+        function myFunction() {
+            var x = document.getElementById("myText").value;
+            document.getElementById("demo").innerHTML = x;
+        }
+    </script>
+</body>
+</html>
